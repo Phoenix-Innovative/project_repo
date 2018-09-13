@@ -1,0 +1,26 @@
+html body{
+	width: 100%;
+}
+
+.container-fluid{
+	width: 99%;
+	padding: 0 15px;
+	margin: auto;
+}
+
+.container-85{
+	width: 85%;
+	min-height: 300px;
+	margin: auto;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*NAVIGATION PART*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.nav-head{
+	width: 95%;
+	height: 108px;
+	background-color: #212121;
+	margin: auto;
+}
