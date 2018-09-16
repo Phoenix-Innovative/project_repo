@@ -156,11 +156,14 @@ a:hover{
 .trans-capt{
   position: absolute;
   top: 100%;
+  left: 1px;
   transition: top .5s ease, background-color .5s ease, background-color .5s ease;
 }
 
 .corp-cont:hover .trans-capt{
   top: 40%;
+  border: 5px solid white;
+
   background-color: green;
   opacity: .6;
 }
