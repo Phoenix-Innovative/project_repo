@@ -187,7 +187,7 @@ a:hover{
 }
 
 .card:hover{
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 
 .abt-inds-hr{
@@ -457,7 +457,15 @@ a:hover{
 
 .tag3:hover{
   
-  transform: scale(1.2, 1.2); 
+  transform: scale(1.1, 1.1); 
+}
+
+.tag3:hover a, .tag4:hover a{
+  text-decoration: underline;
+}
+
+.tag3 a:hover, .tag4 a:hover{
+  color: blue;
 }
 
 .tag3:hover .pol-1{
@@ -473,7 +481,7 @@ a:hover{
 
 .tag4:hover{
   
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 
 }
 
@@ -538,6 +546,14 @@ a:hover{
   display: inline-block;
   margin-top: 50px;
   margin-left: 30px;
+}
+
+.news-wrp a {
+  text-decoration: underline;
+}
+
+.news-wrp a:hover{
+  color: blue;
 }
 
 .news-wrp a h4{
@@ -612,10 +628,12 @@ a:hover{
 
 .four-card-img{
   transition: transform 1s ease;
+  z-index: 1;
 }
 
 .four-card-img:hover{
   transform: rotate(360deg);
+
 }
 
 
