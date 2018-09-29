@@ -1,0 +1,224 @@
+html, body{
+	width: 100%;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+
+body{
+	font-family: 'Mukta', sans-serif;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*Container Part*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.padding-sm{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+.padding-md{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.padding-lg{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.padding-v{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*Navigation Part*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/*a:hover{
+  text-decoration: none;
+  color: inherit;
+}*/
+
+nav{
+	background-color: #2e77bc;
+	color: #fefefe;
+}
+
+.container{
+	max-width: 1366px;
+}
+
+#navbarResponsive{
+	justify-content: flex-start;
+}
+
+.nav-search{
+	margin-left: auto;
+}
+
+.navbar-toggler-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.dropdown-menu{
+	margin-top: -5px;
+}
+
+.dropdown-item{
+	color: #2e77bc;
+}
+
+.dropdown-item:hover{
+	background-color: #2e77bc;
+	color: white;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*Global Classes*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.clearflow{
+	overflow: scroll;
+}
+
+.front-news{
+
+}
+
+.front-news h1, p{
+	color: #656565;
+}
+
+.news-caption{
+	position: absolute;
+	top: 45px;
+	width: 50%;
+	border-right: 12px solid #524612;
+	text-align: right;
+}
+
+.news-caption h3{
+	color: #524612;
+}
+
+.news-rows{
+	height: 750px;
+}
+
+.news-rows h1{
+	color: #b6b6b6;
+	width: -moz-max-content;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.news-block-sm{
+
+}
+
+.news-block-sm-img{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.news-block-sm-cont{
+	display: inline-block;
+	width: 65%;
+	text-align: justify;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*ROW-1-NEWS*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+.row-1{
+	margin-top: 50px;
+}
+
+
+.front-news-11-wrp{
+
+}
+
+.front-news-11{
+	background-image: url("../img/Nocturnal Spirit.jpg");
+	background-size: cover;
+	height: 500px;
+}
+
+.front-news-11-title{
+
+}
+
+
+
+.front-news-11-cont{
+	position: relative;
+}
+
+.front-ad-12{
+	margin-top: auto;
+}
+
+.front-ad-12-cont{
+	height: 500px;
+	background-image: url('../img/Mountain.jpg');
+	background-size: cover;
+}
+
+.front-ad-2{
+	height: 120px;
+	background-image: url('../img/together.jpg');
+
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*ROW-2-NEWS*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+.row-2{
+	margin-top: 50px;
+}
+
+
+.front-news-21-wrp{
+
+}
+
+.front-news-21{
+	background-image: url("../img/Nocturnal Spirit.jpg");
+	background-size: cover;
+	height: 500px;
+}
+
+.front-news-21-title{
+
+}
+
+
+
+.front-news-21-cont{
+	position: relative;
+}
+
+.front-ad-21{
+	height: 120px;
+	background-image: url('../img/together.jpg');
+}
+
