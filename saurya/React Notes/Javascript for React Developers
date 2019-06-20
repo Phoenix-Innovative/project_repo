@@ -1,0 +1,148 @@
+=> Objects in javascript are collection of key value pairs.
+=> If a function is inside of an object then we will call them "Method".
+=> In Javascript function are objects. For example
+=> If a function is call as a Method of an Object "this" will return the object. Like person.walk();
+=> If a function is called as standalone function then "this" will return global object that is window object in browser.
+
+const walked = person.walk.bind(person);
+walk()
+
+=> Now when we call walked() function then walked() as a sandalone function, "this" will always return 'person' object.
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@
+ARROW FUNCTIONS:
+@@@@@@@@@@@@@@@@@@@@@@@@@
+
+const square = function(number) {
+  return number * number;
+};
+
+=> Equivalent to this function with Arrow function which is in ES6 is:
+
+const square = number => number*number;
+
+=> We can have no parenthesis for a single arguement but requires for multiple arguement.
+
+const multiply = (num1, num2) => num1 * num2;
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ARROW FUNCTIONS AND 'THIS':
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+const person = {
+  talk() {
+    setTimeout(function() {
+      console.log("this", this);
+    }, 1000);
+  }
+};
+
+person.talk();
+
+=> This will return window object in console like:
+
+this Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}
+
+=> This is returning window object because Timeout is standalone function in this case. But if we declare a variabe explicitly outside of the callback function for 'this' then it will return it's obect like:
+
+const person = {
+  talk() {
+    var self = this;
+    setTimeout(function() {
+      console.log("this", self);
+    }, 1000);
+  }
+};
+
+person.talk();
+
+=> But Arrow function don't rebinds 'this' keyword:
+
+const person = {
+  talk() {
+    setTimeout(() => {
+      console.log("this", this);
+    }, 1000);
+  }
+};
+
+person.talk();
+
+
+@@@@@@@@@@@@@@@@@@@@@@@
+ARRAY MAP in ES6:
+@@@@@@@@@@@@@@@@@@@@@@@
+
+
+const colors = ["red", "green", "blue"];
+const items = colors.map(color => `<li>${color}</li>`); // `....` (BackTic Character) is template literals in ES6. Here we can define a template for our string. What we input inside ${} will be rendered dynamically.
+
+console.log(items);
+document.write(items);
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+OBJECT DESTRUCTURING
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+const address = {
+  street: "kadaghari",
+  city: "Kathmandu",
+  country: "Nepal"
+};
+
+const { street: st, city, country } = address;
+
+console.log(st, city, country);
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+SPREAD OPERATOR
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+const third = [7, 8, 9];
+
+const combined = [...first, 5, ...second, 8, ...third];
+
+console.log(combined);
+
+=> Using spread operator we could easily clone an array.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

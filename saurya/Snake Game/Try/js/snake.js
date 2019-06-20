@@ -1,6 +1,6 @@
 //for defining a unit movement for snake
 const box = 20;
-var delay = 60;
+var delay = 100;
 
 //array for snake body and its x and y coordinate
 var snakeBody = [];
