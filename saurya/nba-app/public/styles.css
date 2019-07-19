@@ -1,0 +1,245 @@
+.navitem-options {
+  font-weight: 300;
+  font-size: 12px;
+  color: #bababa;
+  padding: 10px;
+  border-top: 1px solid #404040;
+}
+
+.navitem-options a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navitem-options span {
+  color: #fff;
+  margin-right: 10px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* News Templates */
+.news-newsList-item-wrapper {
+  display: flex;
+  border-bottom: 2px solid #d5d5d5;
+  background: #fff;
+}
+
+.news-newsList-item-wrapper .left {
+  background-size: cover !important;
+}
+
+.news-newsList-item-wrapper .left div {
+  width: 90px;
+  height: 90px;
+  background-size: 40px !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.news-newsList-item-wrapper .right {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.news-newsList-item-wrapper .right h2 {
+  font-size: 12px;
+  color: #525252;
+}
+
+.news-newsList-item {
+  flex-grow: 3;
+  border: 1px solid #f2f2f2;
+  background: #fff;
+  margin-top: 0;
+  padding: 8px 5px 0 5px;
+  flex-grow: 3;
+}
+
+.news-newsList-item h2 {
+  font-size: 13px;
+  line-height: 21px;
+  color: #525252;
+}
+
+.news-newsList-item a {
+  text-decoration: none;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* USING TRANSITION STYLES IN NEWS */
+
+.news-list-wrapper {
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in;
+}
+
+.news-list-wrapper-enter {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@22 */
+/* BUTTON FOR LOAD MORE */
+
+.btn-blue-btn {
+  text-align: center;
+  background: #2196f3;
+  border-bottom: 1px solid #d7d7d7;
+  font-weight: 500;
+  color: #eee;
+  padding: 9px;
+  cursor: pointer;
+  font-size: 15px;
+  display: block;
+  text-decoration: none;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@2 */
+/* STYLES FOR CARD INFO */
+
+.card-info {
+  font-size: 11px;
+}
+.card-info i {
+  margin-right: 5px;
+}
+.team-name {
+  margin-right: 7px;
+  background: #d1d1d1;
+  color: #fff;
+  padding: 2px 5px;
+}
+.team-date {
+  color: #2196f3;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* VIDEOS LIST */
+
+.videos-list-wrapper {
+  text-align: center;
+  color: #353535;
+  font-weight: 300;
+  font-size: 21px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* VIDEOS LIST TEMPLATE */
+
+.videos-list-item-wrapper {
+  display: flex;
+  border-bottom: 2px solid #d5d5d5;
+  background: #fff;
+}
+.videos-list-item-wrapper h2 {
+  font-size: 13px;
+  color: #525252;
+}
+.videos-list-left {
+  background-size: cover !important;
+}
+.videos-list-left div {
+  width: 90px;
+  height: 90px;
+  background-size: 40px !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background: url(images/play.png);
+}
+.videos-list-right {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* HEADER OF ARTICLES */
+.article-team-header {
+  border: 1px solid #c5c5c5;
+  border-bottom: 0px;
+  background: #fff;
+  margin: 5px 5px 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article-header-left {
+  width: 57px;
+  height: 50px;
+  background-size: 65% !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+.article-header-right {
+  flex-grow: 1;
+  padding-left: 10px;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+/* POST DATA OF ARTICLES */
+
+.article-post-data {
+  border: 1px solid #c5c5c5;
+  border-bottom: 0px;
+  background: #fff;
+  margin: 5px 5px 0 5px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 300;
+}
+.article-post-data span {
+  font-weight: 500;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* BODY PART OF ARTICLES */
+
+.article-body {
+  background: #fff;
+  margin: 0 5px;
+  border: 1px solid #c5c5c5;
+  padding: 10px;
+}
+.article-body h1 {
+  font-size: 21px;
+  font-weight: 400;
+  color: #4d4d4d;
+  margin: 15px 0;
+}
+.article-image {
+  background-size: cover !important;
+  width: 100%;
+  height: 200px;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+.article-text {
+  font-weight: 300;
+  color: #666666;
+  line-height: 23px;
+  margin: 15px 0;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* Main Video Wrapper */
+
+.single-video-wrapper {
+  background: #fff;
+  margin: 0 5px;
+  border: 1px solid #c5c5c5;
+}
+.single-video-wrapper h1 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #4d4d4d;
+  margin: 15px 0;
+  padding: 0 10px;
+}
+.single-video-wrapper iframe {
+  border: 0;
+}
+.related-wrapper {
+  margin: 0 5px;
+}

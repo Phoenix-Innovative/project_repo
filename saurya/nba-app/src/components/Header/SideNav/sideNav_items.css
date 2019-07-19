@@ -1,0 +1,20 @@
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* SideNav Items */
+
+.navitem-options {
+  font-weight: 300;
+  font-size: 12px;
+  color: #bababa;
+  padding: 10px;
+  border-top: 1px solid #404040;
+}
+
+.navitem-options a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navitem-options span {
+  color: #fff;
+  margin-right: 10px;
+}
